@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    
+
+    
+    
+    <h1>Add anything</h1>
+     <label for="text_1">Number 1: </label><input type="text" name="" id="text_1"> <br> <br>
+    <label for="text_2">Number 2:  </label><input type="text" name="" id="text_2"> <br> <br>
+    <input type="submit" onclick="add()" id="add" value="+" style="text-align: center;">
+    <p id="result"></p>
+    
+    <script>
+         function add(){
+              let x = document.getElementById("text_1").value ;
+              let y = document.getElementById("text_2").value ;
+            //   Debugging
+            //   console.log(typeof(x));
+            //   console.log(typeof(y));   
+            //   console.log(x,y);
+            //   console.log(isNaN(x));
+            //   console.log(isNaN(y));
+              
+              
+               
+               if (isNaN(x) == false && isNaN(y) == false) {
+                   t = Number(x);
+                   q = Number(y)
+                let res = t +q ;
+                  document.getElementById("result").innerText = res;  
+                
+               } 
+                else {
+                    let result = x +y ;
+                  document.getElementById("result").innerText = result;
+                
+               }
+                
+              }
+              
+</script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register yourself</title> 
+    
+    <style>
+body{
+    background-color: #EFF5F5; 
+    display: flex;
+    justify-content: space-around;
+} 
+      #register{
+        padding: 10px;
+      }  
+#hide {
+    width: 100%;
+}
+ input, label {
+    padding: 10px;
+    margin: 5px; 
+    text-align: center;
+
+ }  
+ input{
+    border-radius: 5px;
+    border: 2px solid #EFF5F5;
+ } 
+ .submit{
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 2px solid  #EFF5F5;
+    background-color :#CFF5E7 ; 
+    color: #852999;
+    width: 100px;
+    text-align: center;
+ }     
+ .message {
+    display: none;
+ }
+    </style>
+</head>
+<body>
+    <div class="hide">
+   <header> <h2>Register for online shopping Website</h2></header> 
+      <table>
+    <form action="" id="register" novalidate>
+        <tr>
+            <td><label for="firstname">FirstName:   </label></td>
+             <td><input type="text" name="" id="firstname"  required placeholder="Enter your first name"/></td>
+            </tr>
+     <tr>
+        <td><label for="lastname">lastName</label></td>
+         <td><input type="text" name="" id="lastname" required placeholder="Enter your Last name"></td> 
+    </tr>
+        <tr>
+            <td><label for="username">Username:</label></td>
+        <td> <input type="text" name="" id="username" required placeholder="choose a  Username"></td>
+        </tr>
+        <tr>
+            <td><label for="dob">DOB:  </label></td>
+           <td> <input type="date" name="" id="dob"></td>
+        </tr>
+            <tr>
+                <td><label for="gender">Gender:  </label></td>
+               <td> <input type="radio" name="" id="genderm" value="M">Male
+                <input type="radio" name="" id="genderf" value="F">Female </td>
+            </tr>
+          <tr>
+            <td> <label for="email">Email</label></td>
+          <td> <input type="email" name="" id="email" placeholder="Enter your Email" required>  </td>  
+        </tr>
+        <tr>
+            <td><label for="password">Password</label></td>
+        
+        <td><input type="password" name="" id="password" placeholder="Choose a password">  </td>
+    </tr>  
+    <tr>
+        <td></td>
+        <td  colspan="2" ><button class="submit" onclick="display()">submit
+  </button>           
+        </td>
+    </tr>
+    </form>  
+        </table> 
+    </div> 
+        <div class="message"   id="show">
+            <h2>You're successfully registered</h2>
+           
+                
+            <p id="username_1"> </p>
+                    <p id="name"> Your Name :</p>
+                  <p id="email_1">Your Registered Email:</p>
+                <p id="dob_1">Date of  Birth </p>
+                 
+
+            
+        </div> 
+        
+  <script> 
+   let fname = document.getElementById("firstname").value 
+    
+    let lname = document.getElementById("lastname").value ;
+    let uname = document.getElementById("username").value ;
+    let date_of_birth = document.getElementById("dob").value ;
+    let gender1 = document.getElementById("genderm").value ; 
+    let gender2 = document.getElementById("genderf").value ;
+    let email = document.getElementById("email").value ;
+    let password = document.getElementById("password").value  ;
+function  display(){
+   
+    document.getElementById("name").innerHTML = fname, lname ; 
+    document.getElementById("username_1").innerHTML = uname ;
+    document.getElementById("email_1").innerHTML = email ; 
+    document.getElementById("dob_1").innerHTML =   date_of_birth; 
+    document.getElementById("show").style.display = "block" ; 
+    document.getElementById("hide").style.display = "none";
+
+    
+}
+
+
+  </script>
+</body>
+</html>
