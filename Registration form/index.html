@@ -6,131 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register yourself</title> 
     
-    <style>
-body{
-    background-color: #EFF5F5; 
-   
-} 
-      #register{
-        padding: 10px;
-      }  
-
-input, label {
-    padding: 10px;
-    margin: 5px; 
-    text-align: center;
-
- }  
- input{
-    border-radius: 5px;
-    border: 2px solid #EFF5F5;
- } 
- .submit{
-    padding: 10px;
-    margin: 5px;
-    border-radius: 5px;
-    border: 2px solid  #EFF5F5;
-    background-color :#CFF5E7 ; 
-    color: #852999;
-    width: 100px;
-    text-align: center;
- }     
-
-
-
- 
-    </style>
+   <link rel="stylesheet" href="./style.css">
+   <script src="./index.js"></script>
 </head>
-<body>
-    <div class="hide">
+<body> 
+    
    <header> <h2>Register for online shopping Website</h2></header> 
-      <table>
-    <form action="" id="register" >
-        <tr>
-            <td><label for="firstname">FirstName:   </label></td>
-             <td><input type="text" name="" id="firstname"  required placeholder="Enter your first name"  autocomplete="off"/ value=""></td>
-            </tr>
-     <tr>
-        <td><label for="lastname">lastName</label></td>
-         <td><input type="text" name="" id="lastname" required placeholder="Enter your Last name" autocomplete="off" value=""></td> 
-    </tr>
-        <tr>
-            <td><label for="username">Username:</label></td>
-        <td> <input type="text" name="" id="username" required placeholder="choose a  Username" autocomplete="off" value=""></td>
-        </tr>
-        <tr>
-            <td><label for="dob">DOB:  </label></td>
-           <td> <input type="date" name="" id="dob" autocomplete="off" value=""></td>
-        </tr>
-            <tr>
-                <td><label for="gender">Gender:  </label></td>
-               <td> <input type="radio" name="" id="genderm" value="M" autocomplete="off" >Male
-                <input type="radio" name="" id="genderf" value="F" autocomplete="off">Female </td>
-            </tr>
-          <tr>
-            <td> <label for="email">Email</label></td>
-          <td> <input type="email" name="" id="email" placeholder="Enter your Email" required autocomplete="off" value="">  </td>  
-        </tr>
-        <tr>
-            <td><label for="password">Password</label></td>
-        
-        <td><input type="password" name="" id="password" placeholder="Choose a password" autocomplete="off" value="">  </td>
-    </tr>  
-    <tr>
-        <td></td>
-        <td  colspan="2" ><button class="submit" onclick="display()">submit
-  </button>           
-        </td>
-    </tr>
-    </form>  
-        </table> 
-    </div> 
+     
+    
+        <label for="">FirstName:   </label>
+            <input type="text" name="" id="firstname"   value="">
+             <input type="submit" class="submit" onclick="display()" value="submit">
+           
        
-            <h2>You're successfully registered</h2>
+        
            
                 
-            <p id="username_1"> </p>
+            
                     <p id="name"> </p>
-                  <p id="email_1"></p>
-                <p id="dob_1"> </p>
+                  
+     
+            
                  
 
             
         
-        
-  <script> 
-//    Accessing entered values 
-   let fname = document.getElementById("firstname"); 
-  let lname = document.getElementById("lastname") ;
-    let uname = document.getElementById("username") ;
-    let date_of_birth = document.getElementById("dob") ;
-    let gender1 = document.getElementById("genderm") ; 
-    let gender2 = document.getElementById("genderf") ;
-    let email = document.getElementById("email") ;
-    let password = document.getElementById("password")  ;
-//    displaying entered values
-    let full_name = document.getElementById("name")  ;
-  let username_2 =   document.getElementById("username_1"); 
-   let email_2 =  document.getElementById("email_1");  
-     let date_of_birth_1 = document.getElementById("dob_1") ;
-function  display(){
     
-    full_name.innerHTML = "Your name " + fname.value + lname.value ;
-    
-    username_2.innerHTML = "User" + uname.value + "is successfully registered"
-    
-    date_of_birth_1.innerHTML = date_of_birth.value
-    
-   
-    email_2.innerHTML = email.value ;
-   
-    
-    
-
-    
-}
-
-
-  </script>
-</body>
+ </body>
 </html>

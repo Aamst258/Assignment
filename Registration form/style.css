@@ -1,0 +1,36 @@
+body{
+    background-color: #EFF5F5; 
+    color: black;
+    font-weight: bolder;
+    
+   
+}  
+.all {
+    display: flex;
+    justify-content: space-around;
+}
+      #register{
+        padding: 10px;
+      }  
+
+input, label {
+    padding: 10px;
+    margin: 5px; 
+    text-align: center;
+
+ }  
+ input{
+    border-radius: 5px;
+    border: 2px solid #EFF5F5;
+ } 
+ .submit{
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 2px solid  #EFF5F5;
+    background-color :#CFF5E7 ; 
+    color: #852999;
+    width: 100px;
+    text-align: center;
+ }     
+
