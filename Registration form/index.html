@@ -16,7 +16,11 @@ body{
         padding: 10px;
       }  
 
+<<<<<<< HEAD
 input, label {
+=======
+ input, label {
+>>>>>>> assignmentcopy
     padding: 10px;
     margin: 5px; 
     text-align: center;
@@ -36,7 +40,13 @@ input, label {
     width: 100px;
     text-align: center;
  }     
+<<<<<<< HEAD
 
+=======
+ .message {
+    font-family: 'Courier New', Courier, monospace;
+ }
+>>>>>>> assignmentcopy
     </style>
 </head>
 <body>
@@ -46,6 +56,7 @@ input, label {
     <form action="" id="register" novalidate>
         <tr>
             <td><label for="firstname">FirstName:   </label></td>
+<<<<<<< HEAD
              <td><input type="text" name="" id="firstname"  required placeholder="Enter your first name"  autocomplete="off"/></td>
             </tr>
      <tr>
@@ -68,11 +79,39 @@ input, label {
           <tr>
             <td> <label for="email">Email</label></td>
           <td> <input type="email" name="" id="email" placeholder="Enter your Email" required autocomplete="off">  </td>  
+=======
+             <td><input type="text" name="firstname id="firstname"  required placeholder="Enter your first name"/></td>
+            </tr>
+     <tr>
+        <td><label for="lastname">lastName</label></td>
+         <td><input type="text" name="lastname" id="lastname" required placeholder="Enter your Last name"></td> 
+    </tr>
+        <tr>
+            <td><label for="username">Username:</label></td>
+        <td> <input type="text" name="username" id="username" required placeholder="choose a  Username"></td>
+        </tr>
+        <tr>
+            <td><label for="dob">DOB:  </label></td>
+           <td> <input type="date" name="dob" id="dob"></td>
+        </tr>
+            <tr>
+                <td><label for="gender">Gender:  </label></td>
+               <td> <input type="radio" name="genderm" id="genderm" value="M">Male
+                <input type="radio" name="genderf" id="genderf" value="F">Female </td>
+            </tr>
+          <tr>
+            <td> <label for="email">Email</label></td>
+          <td> <input type="email" name="email" id="email" placeholder="Enter your Email" required>  </td>  
+>>>>>>> assignmentcopy
         </tr>
         <tr>
             <td><label for="password">Password</label></td>
         
+<<<<<<< HEAD
         <td><input type="password" name="" id="password" placeholder="Choose a password" autocomplete="off">  </td>
+=======
+        <td><input type="password" name="password" id="password" placeholder="Choose a password">  </td>
+>>>>>>> assignmentcopy
     </tr>  
     <tr>
         <td></td>
@@ -83,8 +122,13 @@ input, label {
     </form>  
         </table> 
     </div> 
+<<<<<<< HEAD
        
             <h2>You're successfully registered</h2>
+=======
+        
+            
+>>>>>>> assignmentcopy
            
                 
             <p id="username_1"> </p>
@@ -94,26 +138,43 @@ input, label {
                  
 
             
+<<<<<<< HEAD
         
+=======
+         
+>>>>>>> assignmentcopy
         
   <script> 
-   let fname = document.getElementById("firstname").value 
-    
-    let lname = document.getElementById("lastname").value ;
-    let uname = document.getElementById("username").value ;
-    let date_of_birth = document.getElementById("dob").value ;
-    let gender1 = document.getElementById("genderm").value ; 
-    let gender2 = document.getElementById("genderf").value ;
-    let email = document.getElementById("email").value ;
-    let password = document.getElementById("password").value  ;
+//    Accessing entered values 
+   let fname = document.getElementById("firstname"); 
+  let lname = document.getElementById("lastname") ;
+    let uname = document.getElementById("username") ;
+    let date_of_birth = document.getElementById("dob") ;
+    let gender1 = document.getElementById("genderm") ; 
+    let gender2 = document.getElementById("genderf") ;
+    let email = document.getElementById("email") ;
+    let password = document.getElementById("password")  ;
+//    displaying entered values
+    let full_name = document.getElementById("name")  ;
+  let username_2 =   document.getElementById("username_1"); 
+   let email_2 =  document.getElementById("email_1");  
+     let date_of_birth_1 = document.getElementById("dob_1") ;
 function  display(){
-   
-    document.getElementById("name").innerHTML = fname, lname ; 
-    document.getElementById("username_1").innerHTML = uname ;
-    document.getElementById("email_1").innerHTML = email ; 
-    document.getElementById("dob_1").innerHTML =   date_of_birth; 
-    document.getElementById("show").style.display = "block" ; 
-    document.getElementById("hide").style.display = "none";
+    fname.setAttribute("value","defaultValue")
+    lname.setAttribute("value","defaultValue")
+    full_name.innerHTML = "Your name " + fname.value + lname.value ;
+    uname.setAttribute("value","defaultValue")
+    username_2.innerHTML = "User" + uname.value + "is successfully registered"
+    date_of_birth.setAttribute("value","defaultValue")
+    date_of_birth_1.innerHTML = date_of_birth.value
+    gender1.setAttribute("value","defaultValue")
+    gender2.setAttribute("value","defaultValue")
+    email.setAttribute("value","defaultValue")
+    email_2.innerHTML = email.value ;
+    password.setAttribute("value","defaultValue")
+    
+    // document.getElementById("show").style.display = "block" ; 
+    // document.getElementById("hide").style.display = "none";
 
     
 }
