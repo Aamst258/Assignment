@@ -9,8 +9,7 @@
     <style>
 body{
     background-color: #EFF5F5; 
-    display: flex;
-    justify-content: space-around;
+   
 } 
       #register{
         padding: 10px;
@@ -39,9 +38,6 @@ input, label {
 
 
 
- .message {
-    font-family: 'Courier New', Courier, monospace;
- }
  
     </style>
 </head>
@@ -49,36 +45,36 @@ input, label {
     <div class="hide">
    <header> <h2>Register for online shopping Website</h2></header> 
       <table>
-    <form action="" id="register" novalidate>
+    <form action="" id="register" >
         <tr>
             <td><label for="firstname">FirstName:   </label></td>
-             <td><input type="text" name="" id="firstname"  required placeholder="Enter your first name"  autocomplete="off"/></td>
+             <td><input type="text" name="" id="firstname"  required placeholder="Enter your first name"  autocomplete="off"/ value=""></td>
             </tr>
      <tr>
         <td><label for="lastname">lastName</label></td>
-         <td><input type="text" name="" id="lastname" required placeholder="Enter your Last name" autocomplete="off"></td> 
+         <td><input type="text" name="" id="lastname" required placeholder="Enter your Last name" autocomplete="off" value=""></td> 
     </tr>
         <tr>
             <td><label for="username">Username:</label></td>
-        <td> <input type="text" name="" id="username" required placeholder="choose a  Username" autocomplete="off"></td>
+        <td> <input type="text" name="" id="username" required placeholder="choose a  Username" autocomplete="off" value=""></td>
         </tr>
         <tr>
             <td><label for="dob">DOB:  </label></td>
-           <td> <input type="date" name="" id="dob" autocomplete="off"></td>
+           <td> <input type="date" name="" id="dob" autocomplete="off" value=""></td>
         </tr>
             <tr>
                 <td><label for="gender">Gender:  </label></td>
-               <td> <input type="radio" name="" id="genderm" value="M" autocomplete="off">Male
+               <td> <input type="radio" name="" id="genderm" value="M" autocomplete="off" >Male
                 <input type="radio" name="" id="genderf" value="F" autocomplete="off">Female </td>
             </tr>
           <tr>
             <td> <label for="email">Email</label></td>
-          <td> <input type="email" name="" id="email" placeholder="Enter your Email" required autocomplete="off">  </td>  
+          <td> <input type="email" name="" id="email" placeholder="Enter your Email" required autocomplete="off" value="">  </td>  
         </tr>
         <tr>
             <td><label for="password">Password</label></td>
         
-        <td><input type="password" name="" id="password" placeholder="Choose a password" autocomplete="off">  </td>
+        <td><input type="password" name="" id="password" placeholder="Choose a password" autocomplete="off" value="">  </td>
     </tr>  
     <tr>
         <td></td>
@@ -118,21 +114,18 @@ input, label {
    let email_2 =  document.getElementById("email_1");  
      let date_of_birth_1 = document.getElementById("dob_1") ;
 function  display(){
-    fname.setAttribute("value","defaultValue")
-    lname.setAttribute("value","defaultValue")
-    full_name.innerHTML = "Your name " + fname.value + lname.value ;
-    uname.setAttribute("value","defaultValue")
-    username_2.innerHTML = "User" + uname.value + "is successfully registered"
-    date_of_birth.setAttribute("value","defaultValue")
-    date_of_birth_1.innerHTML = date_of_birth.value
-    gender1.setAttribute("value","defaultValue")
-    gender2.setAttribute("value","defaultValue")
-    email.setAttribute("value","defaultValue")
-    email_2.innerHTML = email.value ;
-    password.setAttribute("value","defaultValue")
     
-    // document.getElementById("show").style.display = "block" ; 
-    // document.getElementById("hide").style.display = "none";
+    full_name.innerHTML = "Your name " + fname.value + lname.value ;
+    
+    username_2.innerHTML = "User" + uname.value + "is successfully registered"
+    
+    date_of_birth_1.innerHTML = date_of_birth.value
+    
+   
+    email_2.innerHTML = email.value ;
+   
+    
+    
 
     
 }
