@@ -41,8 +41,9 @@
                 
                } 
                 else {
-                    let result = x +y ;
-                  document.getElementById("result").innerText = result;
+                    let r = x +y ;
+                    let final_Result = r.replaceAll('"', "");
+                  document.getElementById("result").innerText = final_Result;
                 
                }
                 
